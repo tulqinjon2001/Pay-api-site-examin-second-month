@@ -370,6 +370,8 @@ body {
   overflow: hidden;
 }
 
+/* Header */
+
 .header {
   background-color: #edf3f8;
 }
@@ -396,6 +398,22 @@ body {
   transform: scale(1.1);
 }
 
+.header__hamburger-img {
+  display: none;
+}
+
+@media only screen and (max-width: 670px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__hamburger-img {
+    display: block;
+  }
+}
+
+/* Logo */
+
 .logo {
   display: inline-block;
 }
@@ -416,7 +434,7 @@ body {
 }
 
 .nav__item {
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .nav__item--last {
@@ -462,5 +480,11 @@ body {
 
 .demo-button:active {
   background: #ba4270;
+}
+
+@media only screen and (max-width: 670px) {
+  .demo-button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

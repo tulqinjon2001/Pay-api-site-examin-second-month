@@ -1,9 +1,39 @@
 .header {
-  background-color: $bg-color-header;
+  background-color: #edf3f8;
 }
 
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header__logo-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 431px;
+}
+
+.header__logo {
+  transition: transform 0.3s ease;
+}
+
+.header__logo:hover {
+  transform: scale(1.1);
+}
+
+.header__hamburger-img {
+  display: none;
+}
+
+@media only screen and (max-width: 670px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__hamburger-img {
+    display: block;
+  }
 }
