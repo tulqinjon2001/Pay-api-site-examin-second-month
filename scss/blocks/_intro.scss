@@ -50,6 +50,17 @@
   text-decoration: none;
 }
 
+.intro__content-link:hover {
+  color: #1b262f;
+  background-color: #fbfcfe;
+}
+
+.intro__content-link:active {
+  color: #fbfcfe;
+  background-color: #1b262f;
+  opacity: 0.5;
+}
+
 .intro__list {
   list-style-type: none;
   margin: 0;
