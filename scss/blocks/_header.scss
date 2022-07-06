@@ -1,15 +1,9 @@
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: #ffffff;
+  background-color: $bg-color-header;
 }
 
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 18px;
-  margin-bottom: 18px;
 }

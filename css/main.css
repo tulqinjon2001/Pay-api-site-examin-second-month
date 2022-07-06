@@ -371,19 +371,29 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: #ffffff;
+  background-color: #edf3f8;
 }
 
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header__logo-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 431px;
+}
+
+.header__logo {
+  transition: transform 0.3s ease;
+}
+
+.header__logo:hover {
+  transform: scale(1.1);
 }
 
 .logo {
@@ -392,8 +402,8 @@ body {
 
 .logo__img {
   display: block;
-  width: 139px;
-  height: 20px;
+  width: 135px;
+  height: 38px;
 }
 
 .nav__list {
@@ -403,12 +413,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .nav__item {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .nav__item--last {
@@ -417,55 +425,42 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: #9597a5;
+  font-family: 'Public Sans';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+  mix-blend-mode: normal;
+  opacity: 0.7;
 }
 
-.invite-button {
-  padding: 8px 35px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 28px;
-  color: #ffffff;
-  background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+.nav__item:hover .nav__link {
+  opacity: 1;
+}
+
+.nav__item:active .nav__link {
+  opacity: 0.8;
+}
+
+.demo-button {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  background: #ba4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  padding: 16px 25px 14px 26px;
   border: none;
-  border-radius: 22px;
 }
 
-.main {
-  margin-top: 80px;
-  background: #f2f2f2;
+.demo-button:hover {
+  background: #da6D97;
 }
 
-.hero {
-  background-image: url("../../img/hero-phones-desktop.png");
-  background-repeat: no-repeat;
-  background-position: top right;
+.demo-button:active {
+  background: #ba4270;
 }
-
-.hero__inner {
-  padding-top: 170px;
-  padding-bottom: 170px;
-}
-
-.hero__content {
-  max-width: 447px;
-}
-
-.hero__heading {
-  margin: 0;
-  margin-bottom: 24px;
-  font-weight: 100;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -1px;
-  color: #2d314d;
-}
-
-.hero__text {
-  margin: 0;
-  margin-bottom: 36px;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: -0.28125px;
-  color: #9597A5;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
