@@ -857,7 +857,7 @@ body {
   align-items: center;
   padding-top: 100px;
   padding-bottom: 10px;
-  max-width: 1015px;
+  max-width: 970px;
 }
 
 .implement__img {
@@ -866,7 +866,7 @@ body {
 }
 
 .implement__content {
-  max-width: 445px;
+  max-width: 420px;
 }
 
 .implement__heading {
@@ -922,6 +922,115 @@ body {
   
   .implement__heading {
     font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+/* Simple */
+
+.simple {
+  background: #edf3f8;
+  background-image: url("../img/hero-bg-img.png");
+  background-size: 780px 780px;
+  background-position: calc(50% + 725px) 0;
+  background-repeat: no-repeat;
+}
+
+.simple__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  max-width: 1106px;
+}
+
+.simple__content {
+  max-width: 445px;
+}
+
+.simple__heading {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+  margin: 0;
+}
+
+.simple__text {
+  color: #6c8294;
+}
+
+.simple__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 566px;
+}
+
+.simple__item-img {
+  width: 264px;
+  height: 500px;
+  border-radius: 35px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .simple__inner {
+    flex-direction: column-reverse;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .simple__list {
+    width: 363px;
+  }
+  
+  .simple__item-img {
+    width: 169px;
+    height: 320px;
+    border-radius: 24px;
+  }
+
+  .simple__content {
+    text-align: center;
+    max-width: 573px;
+    margin-top: 43px;
+  }
+  
+  .simple__heading {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .simple__inner {
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
+
+  .simple__list {
+    width: 290px;
+  }
+  
+  .simple__item-img {
+    width: 140px;
+    height: 286px;
+    border-radius: 14px;
+  }
+
+  .simple__content {
+    text-align: center;
+    max-width: 573px;
+    margin-top: 43px;
+  }
+  
+  .simple__heading {
+    font-size: 24px;
     line-height: 36px;
   }
 }
