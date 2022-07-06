@@ -1,0 +1,161 @@
+.hero {
+  background-color: #edf3f8;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+  padding-bottom: 75px;
+  max-width: 1030px;
+}
+
+.hero__heading {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536b;
+  max-width: 500px;
+  margin: 0;
+}
+
+.hero__form {
+  margin-top: 50px;
+  position: relative;
+}
+
+.hero__form-email {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  background: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+  padding: 16px 276px 14px 27px;
+}
+
+.hero__form-email:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hero__form-submit {
+  position: absolute;
+  left: 326px;
+}
+
+.hero__content-span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6c8294;
+  display: block;
+  margin-top: 16px;
+  margin-left: 27px;
+}
+
+.hero__img {
+  width: 263px;
+  height: 500px;
+  border-radius: 35px;
+}
+
+@media only screen and (max-width: 850px) {
+  .hero__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 100px;
+  } 
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__heading {
+    font-size: 56px;
+    line-height: 64px;
+    max-width: 573px;
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  .hero__form {
+    margin-top: 44px;
+  }
+
+  .hero__form-email {
+    width: 445px;
+  }
+
+  .hero__form-submit {
+    position: absolute;
+    left: 335px;
+  }
+
+  .hero__content-span {
+    margin-left: 0;
+  }
+
+  .hero__img {
+    width: 159px;
+    height: 300px;
+    border-radius: 22px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .hero__inner {
+    padding-top: -8px;
+    padding-bottom: 79px;
+  } 
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__heading {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 24px;
+  }
+
+  .hero__form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__form-email {
+    width: 290px;
+    border: none;
+    color: #36536b;
+    padding: 16px 20px 14px 27px;
+  }
+
+  .hero__form-submit {
+    position: static;
+    margin-top: 16px;
+    width: 290px;
+  }
+
+  .hero__content-span {
+    margin-top: 24px;
+  }
+
+  .hero__img {
+    width: 127px;
+    height: 240px;
+    border-radius: 18px;
+  }
+}
