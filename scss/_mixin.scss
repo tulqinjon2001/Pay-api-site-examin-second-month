@@ -1,0 +1,7 @@
+// Styles of font
+@mixin font-styles($f-family, $f-weight, $f-size, $l-height) {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+}
