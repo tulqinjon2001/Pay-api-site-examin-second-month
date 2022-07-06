@@ -657,6 +657,10 @@ body {
 
 .intro {
   background-color: #1b262f;
+  background-image: url("../img/hero-bg-img.png");
+  background-size: 780px 780px;
+  background-position: calc(50% - 580px) -365px;
+  background-repeat: no-repeat;
 }
 
 .intro__inner {
@@ -761,6 +765,10 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+  .intro {
+    background-position: calc(50% - 0px) -540px;
+  }
+
   .intro__inner {
     flex-direction: column-reverse;
     padding-top: 88px;
@@ -784,6 +792,10 @@ body {
 }
 
 @media only screen and (max-width: 530px) {
+  .intro {
+    background-position: calc(50% - 0px) -575px;
+  }
+
   .intro__inner {
     padding-top: 80px;
     padding-bottom: 80px;
