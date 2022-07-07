@@ -7,6 +7,4 @@ body {
   margin: 0;
   @include font-styles('Public Sans', 400, 15px, 28px);
   color: $text-color;
-  mix-blend-mode: normal;
-  opacity: 0.7;
 }

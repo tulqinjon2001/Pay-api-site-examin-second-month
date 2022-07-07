@@ -1,7 +1,5 @@
 .footer {
-  background: #000;
-}.footer {
-  background-color: #1b262f;
+  background-color: $bg-color-dark;
   background-image: url("../img/hero-bg-img.png");
   background-size: 780px;
   background-position: calc(50% + 700px) calc(50% + 200px);
@@ -9,17 +7,13 @@
 }
 
 .footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-starter;
   padding-top: 31px;
   padding-bottom: 31px;
 }
 
 .footer__logo-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-starter;
   width: 432px;
 }
 
@@ -33,8 +27,7 @@
   margin: 0;
   padding: 0;
   width: 120px;
-  display: flex;
-  justify-content: space-between;
+  @include flex-starter;
 }
 
 .footer__icon {
@@ -54,13 +47,13 @@
   fill: #ba4270;
 }
 
-@media only screen and (max-width: 1000px) {
+@include breakpoint-down(1000px) {
   .footer {
     background-position: calc(50% + 225px) calc(50% + 200px);
   }
 }
 
-@media only screen and (max-width: 650px) {
+@include breakpoint-down(650px) {
   .footer {
     background-position: center calc(50% + 395px);
   }

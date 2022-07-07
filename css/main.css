@@ -337,6 +337,29 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/dm-serif-display-v10-latin-regular.woff2') format('woff2'),
+        url('../fonts/dm-serif-display-v10-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/public-sans-v13-latin-regular.woff2') format('woff2'),
+        url('../fonts/public-sans-v13-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:  url('../fonts/public-sans-v13-latin-700.woff2') format('woff2'),
+        url('../fonts/public-sans-v13-latin-700.woff') format('woff'); 
+}
+
 * {
   box-sizing: border-box;
 }
@@ -372,8 +395,6 @@ body {
   overflow: hidden;
 }
 
-/* Header */
-
 .header {
   background-color: #edf3f8;
   background-image: url("../img/bg-img.png");
@@ -384,8 +405,8 @@ body {
 
 .header__inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -429,8 +450,6 @@ body {
   }
 }
 
-/* Logotip */
-
 .logo {
   display: inline-block;
 }
@@ -446,8 +465,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav__item {
@@ -477,9 +496,7 @@ body {
 }
 
 .demo-button {
-  font-family: 'Public Sans', sans-serif;
   font-weight: 700;
-  font-size: 15px;
   line-height: 18px;
   letter-spacing: -0.115385px;
   color: #fbfcfe;
@@ -499,10 +516,7 @@ body {
   background: #ba4270;
 }
 
-/* Hero */
-
 .hero {
-  background-color: #edf3f8;
   background-color: #edf3f8;
   background-image: url("../img/bg-img.png");
   background-size: 780px;
@@ -537,12 +551,11 @@ body {
 
 .hero__form-email {
   font-weight: 700;
-  font-size: 15px;
   line-height: 18px;
   color: #36536b;
   mix-blend-mode: normal;
   opacity: 0.5;
-  background: #fbfcfe;
+  background-color: #fbfcfe;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border-radius: 24px;
   border: none;
@@ -560,8 +573,6 @@ body {
 }
 
 .hero__content-span {
-  font-weight: 400;
-  font-size: 15px;
   line-height: 18px;
   color: #6c8294;
   display: block;
@@ -672,8 +683,6 @@ body {
   }
 }
 
-/* Intro */
-
 .intro {
   background-color: #1b262f;
   background-image: url("../img/hero-bg-img.png");
@@ -696,7 +705,6 @@ body {
 
 .intro__heading {
   font-family: 'DM Serif Display';
-  font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
@@ -715,7 +723,6 @@ body {
 
 .intro__content-link {
   font-weight: 700;
-  font-size: 15px;
   line-height: 18px;
   text-align: center;
   letter-spacing: -0.115385px;
@@ -743,6 +750,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 536px;
   height: 103px;
   flex-wrap: wrap;
@@ -864,8 +872,6 @@ body {
   }
 }
 
-/* Imploment */
-
 .implement {
   background-color: #edf3f8;
 }
@@ -899,9 +905,6 @@ body {
 }
 
 .implement__text {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 28px;
   color: #6c8294;
   margin: 0;
   margin-top: 24px;
@@ -944,8 +947,6 @@ body {
     line-height: 36px;
   }
 }
-
-/* Simple */
 
 .simple {
   background: #edf3f8;
@@ -1054,8 +1055,6 @@ body {
   }
 }
 
-/* Services */
-
 .services {
   background-color: #edf3f8;
 }
@@ -1070,6 +1069,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .services__item {
@@ -1126,7 +1126,6 @@ body {
 
 .services__item-heading {
   font-weight: 700;
-  font-size: 18px;
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.138462px;
@@ -1136,7 +1135,6 @@ body {
 }
 
 .services__item-text {
-  font-size: 15px;
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.115385px;
@@ -1158,8 +1156,6 @@ body {
     margin-top: 0px;
   }
 }
-
-/* Begin */
 
 .begin {
   background-color: #edf3f8;
@@ -1189,12 +1185,11 @@ body {
 
 .begin__form-email {
   font-weight: 700;
-  font-size: 15px;
   line-height: 18px;
   color: #36536b;
   mix-blend-mode: normal;
   opacity: 0.5;
-  background: #fbfcfe;
+  background-color: #fbfcfe;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border-radius: 24px;
   border: none;
@@ -1252,8 +1247,6 @@ body {
   }
 }
 
-/* Footer */
-
 .footer {
   background-color: #1b262f;
   background-image: url("../img/hero-bg-img.png");
@@ -1289,6 +1282,7 @@ body {
   width: 120px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__icon {

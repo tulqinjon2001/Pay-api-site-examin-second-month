@@ -1,11 +1,9 @@
 .implement {
-  background-color: #edf3f8;
+  background-color: $bg-color-light;
 }
 
 .implement__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-starter;
   padding-top: 100px;
   padding-bottom: 10px;
   max-width: 1015px;
@@ -31,15 +29,12 @@
 }
 
 .implement__text {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 28px;
   color: #6c8294;
   margin: 0;
   margin-top: 24px;
 }
 
-@media only screen and (max-width: 950px) {
+@include breakpoint-down(950px) {
   .implement__inner {
     flex-direction: column;
   }
@@ -61,7 +56,7 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@include breakpoint-down(450px) {
   .implement__inner {
     padding-top: 80px;
   }
@@ -76,5 +71,3 @@
     line-height: 36px;
   }
 }
-
-// Simple

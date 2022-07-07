@@ -1,5 +1,5 @@
 .services {
-  background-color: #edf3f8;
+  background-color: $bg-color-light;
 }
 
 .services__inner {
@@ -10,8 +10,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  @include flex-starter;
 }
 
 .services__item {
@@ -68,24 +67,22 @@
 
 .services__item-heading {
   font-weight: 700;
-  font-size: 18px;
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.138462px;
-  color: #36536b;
+  color: $title-color-light;
   margin: 0;
   margin-bottom: 16px;
 }
 
 .services__item-text {
-  font-size: 15px;
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.115385px;
   color: #6c8294;
 }
 
-@media only screen and (max-width: 686px) {
+@include breakpoint-down(686px) {
   .services__list {
     flex-direction: column;
     align-items: center;

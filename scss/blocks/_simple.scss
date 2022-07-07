@@ -1,5 +1,5 @@
 .simple {
-  background: #edf3f8;
+  background: $bg-color-light;
   background-image: url("../img/hero-bg-img.png");
   background-size: 780px 780px;
   background-position: calc(50% + 725px) 0;
@@ -7,9 +7,7 @@
 }
 
 .simple__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-starter;
   padding-top: 140px;
   padding-bottom: 140px;
   max-width: 1106px;
@@ -20,12 +18,9 @@
 }
 
 .simple__heading {
-  font-family: 'DM Serif Display';
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
+  @include font-styles('DM Serif Display', 400, 48px, 56px);
   letter-spacing: -0.369231px;
-  color: #36536b;
+  color: $title-color-light;
   margin: 0;
 }
 
@@ -48,7 +43,7 @@
   border-radius: 35px;
 }
 
-@media only screen and (max-width: 1024px) {
+@include breakpoint-down(1024px) {
   .simple__inner {
     flex-direction: column-reverse;
     padding-top: 94px;
@@ -77,7 +72,7 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@include breakpoint-down(420px) {
   .simple__inner {
     padding-top: 74px;
     padding-bottom: 74px;

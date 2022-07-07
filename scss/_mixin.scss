@@ -5,3 +5,17 @@
   font-size: $f-size;
   line-height: $l-height;
 }
+
+// List undestyle
+@mixin flex-starter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Responsive breakpoint down
+@mixin breakpoint-down($screen-size) {
+  @media only screen and (max-width: $screen-size) {
+    @content;
+  }
+}
